@@ -1,0 +1,28 @@
+package com.pinyougou.pay.service.impl;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Value;
+
+import com.alibaba.dubbo.config.annotation.Service;
+import com.pinyougou.pay.service.WeixinPayService;
+
+@Service
+public class WeixinPayServiceImpl implements WeixinPayService {
+
+	@Value("${appid}")
+	private String appid;
+	
+	@Value("${partner}")
+	private String partner;
+	
+	@Value("${partnerkey}")
+	private String partnerkey;
+	
+	@Override
+	public Map createNative(String out_trade_no, String total_fee) {
+		
+		return null;
+	}
+
+}

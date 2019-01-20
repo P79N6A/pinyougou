@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=pinyougou-user-web/D:\/develop\/repository\/repository_pinyougou\/org\/springframework\/security\/spring-security-core\/4.1.0.RELEASE\/spring-security-core-4.1.0.RELEASE.jar&lt;org.springframework.security.core.userdetails(UserDetailsService.class[UserDetailsService" modifiers="1537" timestamp="1496974636686"/>
+    <typeInfo handle="=pinyougou-cart-interface/src\/main\/java&lt;com.pinyougou.cart.service{CartService.java[CartService" modifiers="513" timestamp="1546572656069"/>
+    <typeInfo handle="=pinyougou-pay-interface/src\/main\/java&lt;com.pinyougou.pay.service{WeixinPayService.java[WeixinPayService" modifiers="513" timestamp="1547178540203"/>
+</typeInfoHistroy>

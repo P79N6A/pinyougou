@@ -1,0 +1,36 @@
+package com.pinyougou.pay.service.impl;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Value;
+
+import com.alibaba.dubbo.config.annotation.Service;
+import com.pinyougou.pay.service.WeixinPayService;
+
+@Service
+public class WeixinPayServiceImpl implements WeixinPayService {
+
+	@Value("${appid}")
+	private String appid;
+	
+	@Value("${partner}")
+	private String partner;
+	
+	@Value("${partnerkey}")
+	private String partnerkey;
+	
+	
+	/**
+	 * 生成二维码
+	 */
+	@Override
+	public Map createNative(String out_trade_no, String total_fee) {
+		//1.创建参数
+		Map<String,String> param=new HashMap();
+		param.put("appid",appid);//公众号
+		param.put("mch_id",partner);//商户号
+		return null;
+	}
+
+}

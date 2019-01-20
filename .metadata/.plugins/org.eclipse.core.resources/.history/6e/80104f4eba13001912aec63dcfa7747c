@@ -1,0 +1,15 @@
+package com.pinyougou.cart.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * 支付控制层
+ * @author xiong
+ *
+ */
+@RestController
+@RequestMapping("/pay")
+public class PayController {
+
+}

@@ -1,0 +1,61 @@
+package com.pinyougou.page.service.impl;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+import java.util.HashMap;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfig;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+
+import com.pinyougou.mapper.TbGoodsDescMapper;
+import com.pinyougou.mapper.TbGoodsMapper;
+import com.pinyougou.page.service.ItemPageService;
+import com.pinyougou.pojo.TbGoods;
+import com.pinyougou.pojo.TbGoodsDesc;
+
+import freemarker.core.ParseException;
+import freemarker.template.Configuration;
+import freemarker.template.MalformedTemplateNameException;
+import freemarker.template.Template;
+import freemarker.template.TemplateNotFoundException;
+
+public class ItemPageServiceImpl implements ItemPageService {
+
+	@Value("${pagedir}")
+	private String pagedir;
+	
+	@Autowired
+	private FreeMarkerConfig freeMarkerConfig;
+	
+	@Autowired 
+	private TbGoodsMapper goodsMapper;
+	
+	@Autowired 
+	private TbGoodsDescMapper goodsDescMapper; 
+	
+	@Override
+	public boolean genItemHtml(Long goodsId) {
+		
+		try {
+			Configuration configuration = freeMarkerConfig.getConfiguration();
+			Template template = configuration.getTemplate("item.ftl");
+			HashMap dataModel = new HashMap<>();
+			
+			//1.加载商品表数据
+			TbGoods goods = goodsMapper.selectByPrimaryKey(goodsId);
+			dataModel.put("goods", goods);
+			//2.加载商品扩展表数据
+			TbGoodsDesc goodsDesc = goodsDescMapper.selectByPrimaryKey(goodsId);
+			dataModel.put("goodsDesc",goodsDesc);
+			
+			Writer out = new FileWriter(pagedir+goodsId+".html")
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		return false;
+	}
+
+}

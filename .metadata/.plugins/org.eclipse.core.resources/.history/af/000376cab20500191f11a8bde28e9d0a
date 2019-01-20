@@ -1,0 +1,11 @@
+package com.pinyougou.page.service;
+
+public interface ItemPageService {
+	
+	/**
+	 * 
+	 * @param goodsId
+	 * @return
+	 */
+	public boolean genItemHtml(Long goodsId);
+}

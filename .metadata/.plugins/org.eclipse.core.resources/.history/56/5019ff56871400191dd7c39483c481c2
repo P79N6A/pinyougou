@@ -1,0 +1,5 @@
+app.controller('seckillGoodsController',function($scope,seckillGoodsService){
+	
+	
+	//读取列表数据绑定到表单中
+});

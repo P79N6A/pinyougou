@@ -1,0 +1,29 @@
+package cn.itcast.sms;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Component;
+
+/**
+ * 消息监听类
+ * @author xiong
+ *
+ */
+@Component
+public class SmsListener {
+	
+	@Autowired
+	private SmsUtil smsUtil;
+	
+	@JmsListener(destination="sms")
+	public void sendSms(Map<String,String> map) {
+		smsUtil.sendSms(
+				map.get("mobile"), 
+				map.get("template_code"), 
+				map.get("sign_name"),
+				param
+				);
+	}
+}

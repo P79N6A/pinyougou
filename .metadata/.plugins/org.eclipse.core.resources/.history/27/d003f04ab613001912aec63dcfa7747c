@@ -1,0 +1,9 @@
+package com.pinyougou.pay.service;
+/**
+ * 微信支付接口
+ * @author xiong
+ *
+ */
+public interface WeixinPayService {
+	
+}

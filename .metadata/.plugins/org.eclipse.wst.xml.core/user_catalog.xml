@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://code.alibabatech.com/schema/dubbo/dubbo.xsd" uri="file:///D:/develop/eclipse-workspace/schema/dubbo.xsd"/>
+  <system systemId="http://www.springframework.org/schema/beans" uri="file:///D:/develop/eclipse-workspace/schema/spring-beans-4.2.xsd"/>
+</catalog>

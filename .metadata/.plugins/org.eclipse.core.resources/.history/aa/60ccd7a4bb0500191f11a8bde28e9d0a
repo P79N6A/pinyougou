@@ -1,0 +1,47 @@
+package com.pinyougou.page.service.impl;
+
+import java.io.IOException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfig;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+
+import com.pinyougou.mapper.TbGoodsDescMapper;
+import com.pinyougou.mapper.TbGoodsMapper;
+import com.pinyougou.page.service.ItemPageService;
+
+import freemarker.core.ParseException;
+import freemarker.template.Configuration;
+import freemarker.template.MalformedTemplateNameException;
+import freemarker.template.Template;
+import freemarker.template.TemplateNotFoundException;
+
+public class ItemPageServiceImpl implements ItemPageService {
+
+	@Value("${pagedir}")
+	private String pagedir;
+	
+	@Autowired
+	private FreeMarkerConfig freeMarkerConfig;
+	
+	@Autowired 
+	private TbGoodsMapper goodsMapper;
+	
+	@Autowired 
+	private TbGoodsDescMapper goodsDescMapper; 
+	
+	@Override
+	public boolean genItemHtml(Long goodsId) {
+		
+		
+		try {
+			Configuration configuration = freeMarkerConfig.getConfiguration();
+			Template template = configuration.getTemplate("item.ftl");
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		return false;
+	}
+
+}

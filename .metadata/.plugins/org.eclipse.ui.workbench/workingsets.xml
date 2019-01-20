@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1545895885767_1" label="pinyougou-parent" name="pinyougou-parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-seckill-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-search-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-user-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-order-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-manager-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-content-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-page-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-cart-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-sellergoods-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-seckill-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-search-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-cart-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-sellergoods-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-dao" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-pay-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-common" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-portal-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-page-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-content-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-shop-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-cart-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-order-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-search-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-user-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-seckill-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-pojo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-page-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-solr-util" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-user-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pinyougou-task-service" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1543579014880_0" label="Window Working Set" name="Aggregate for window 1543579014879"/>
+</workingSetManager>

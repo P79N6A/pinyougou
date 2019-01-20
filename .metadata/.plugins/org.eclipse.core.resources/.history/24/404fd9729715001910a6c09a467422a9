@@ -1,0 +1,15 @@
+package com.pinyougou.task;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SpringTask {
+	
+	@Autowired
+	private RedisTemplate redisTemplate;
+	
+	@Autowired
+	private TbSeckillGoodsMapper seckillGoodsMapper;
+}

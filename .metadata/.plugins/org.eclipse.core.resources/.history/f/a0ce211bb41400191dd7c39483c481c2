@@ -1,0 +1,19 @@
+package com.pinyougou.seckill.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.pinyougou.pay.service.WeixinPayService;
+import com.pinyougou.seckill.service.SeckillOrderService;
+
+@RestController
+@RequestMapping("/pay")
+public class PayController {
+	
+	@Reference
+	private WeixinPayService weixinPayService;
+	
+	 @Reference 
+	 private SeckillOrderService seckillOrderService;
+}

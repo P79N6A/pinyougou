@@ -1,0 +1,4 @@
+app.controller('payController',function($scope,payService){
+	//本地生成二维码
+	
+});
